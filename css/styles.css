@@ -1,0 +1,854 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/* Reset browser default styles: */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+  list-style: none;
+}
+
+/* border-box so that border widths aren't added to the total width of the element: */
+html {
+  box-sizing: border-box;    
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Clearfix to make floated elements behave correctly: */
+  .cf:before, .cf:after { content: ""; display: table; }
+  .cf:after { clear: both; }
+  .cf { zoom: 1; }
+  .clear { clear: both; }
+  
+a:focus,
+a:active {
+	outline: none;
+}
+
+/* In order for the percentage heights to work we need this: */
+html, body { height:100%; }
+
+
+
+
+Body {
+font-family: 'Roboto Slab', serif;
+background: linear-gradient(to bottom, hsla(215,100%,57%,1) 0%,hsla(215,100%,57%,0) 100%);
+margin: 0px 0px 20px 0px; 
+background-repeat: no-repeat;
+    
+}
+.layout {
+	width: 90%;
+	margin: 30px auto 30px auto;
+}
+
+header {
+font-family: 'Roboto Slab', serif;
+font-weight: 600;
+font-size: 30px;
+}
+
+h1 {
+font-weight: 500;
+margin: 10px 0px 0px 20px;
+}
+
+h2 {
+font-weight: 500;
+font-size: 50px;
+margin: 15px 0px 0px 20px;
+border-bottom: solid black 5px;
+width: 50%;
+}
+
+.homepage {
+background-color: black;
+padding: 10px 10px 10px 0px;
+margin-top: 5px;
+
+}
+
+.homepage li {
+float: left;
+text-align: left;
+margin-left: 20px;
+background-color: white;
+padding: 5px 10px 5px 10px;
+}
+
+.projects h2 {
+width: 100%;
+margin: 20px 20px 5px 20px;
+border: none;
+}
+
+a {
+color: black;
+}
+
+a:hover {
+color:deepskyblue;
+}
+
+a:link {
+text-decoration: none;
+}
+
+.imgone {
+float: left;
+width: 20%;
+}
+
+
+.imgone img {
+width: 100%;
+height: auto;
+margin: 100px 50px 70px 40%;
+border: 5px solid black;
+}
+
+.about {
+font-weight: 400;
+font-size: 16px;
+width: 50%;
+margin: 93px 20px 30px 35%;
+}
+
+.intro {
+width: 30%;
+margin: 20px 0px 20px 20px; 
+}
+/*class page START*/
+
+.twodo {
+width: 31.33%;
+float: left;
+margin: 1%;
+}
+
+.twodo img {
+width: 100%;
+height: auto;
+float: left;
+margin: 10px 10px 20px 0px;
+border: 5px solid black;   
+}
+
+.threedo {
+width: 31.33%;
+float: left;
+margin: 1%;
+}
+
+.threedo img {
+width: 100%;
+height: auto;
+margin: 10px 10px 20px 0px;
+border: 5px solid black;   
+}
+   
+.cto {
+width: 31.33%;
+float: left;
+margin: 1%;
+}
+
+.cto img {
+width: 100%;
+height: auto;
+margin: 10px 10px 20px 0px;
+border: 5px solid black;   
+}
+
+.ddo {
+width: 31.33%;
+float: left;
+margin: 1%;
+}
+
+.ddo img {
+width: 100%;
+height: auto;
+margin: 10px 10px 20px 0px;
+border: 5px solid black;   
+}
+
+.dmdoo {
+width: 31.33%;
+float: left;
+margin: 1%;
+}
+
+.dmdoo img {
+width: 100%;
+height: auto;
+margin: 10px 10px 20px 0px;
+border: 5px solid black;   
+}
+
+.dmdto {
+width: 31.33%;
+float: left;
+margin: 1%;
+}
+
+.dmdto img {
+width: 100%;
+height: auto;
+margin: 10px 10px 20px 0px;
+border: 5px solid black;   
+}
+
+.faio {
+width: 31.33%;
+float: left;
+margin: 1%;
+}
+
+.faio img {
+width: 100%;
+height: auto;
+margin: 10px 10px 20px 0px;
+border: 5px solid black;   
+}
+
+.photoo {
+width: 31.33%;
+float: left;
+margin: 1%;
+}
+
+.photoo img {
+width: 100%;
+height: auto;
+margin: 10px 10px 20px 0px;
+border: 5px solid black;   
+}
+
+.typeo {
+width: 31.33%;
+float: left;
+margin: 1%;
+}
+
+.typeo img {
+width: 100%;
+height: auto;
+margin: 10px 10px 20px 0px;
+border: 5px solid black;   
+}
+
+
+
+/*class page END*/
+
+/*2D form page START*/
+
+.exo {
+width: 23%;
+float: left;
+margin: 1%;
+}
+
+.exo img {
+width: 100%;
+height: auto;
+float: left;
+margin: 10px 10px 20px 0px;
+border: 5px solid black;   
+}
+
+.ext {
+width: 23%;
+float: left;
+margin: 1%;
+}
+
+.ext img {
+width: 100%;
+height: auto;
+margin: 10px 10px 20px 0px;
+border: 5px solid black;   
+}
+   
+.exth {
+width: 23%;
+float: left;
+margin: 1%;
+}
+
+.exth img {
+width: 100%;
+height: auto;
+margin: 10px 10px 20px 0px;
+border: 5px solid black;   
+}
+
+.exf {
+width: 23%;
+float: left;
+margin: 1%;
+}
+
+.exf img {
+width: 100%;
+height: auto;
+margin: 10px 10px 20px 0px;
+border: 5px solid black;   
+}
+
+.exfi {
+width: 23%;
+float: left;
+margin: 1%;
+}
+
+.exfi img {
+width: 100%;
+height: auto;
+margin: 10px 10px 20px 0px;
+border: 5px solid black;   
+}
+
+.exs{
+width: 23%;
+float: left;
+margin: 1%;
+}
+
+.exs img {
+width: 100%;
+height: auto;
+margin: 10px 10px 20px 0px;
+border: 5px solid black;   
+}
+
+.exse{
+width: 23%;
+float: left;
+margin: 1%;
+}
+
+.exse img {
+width: 100%;
+height: auto;
+margin: 10px 10px 20px 0px;
+border: 5px solid black;   
+}
+
+.exe{
+width: 23%;
+float: left;
+margin: 1%;
+}
+
+.exe img {
+width: 100%;
+height: auto;
+margin: 10px 10px 20px 0px;
+border: 5px solid black;   
+}
+
+/*2D form page END*/
+
+/*3D form page START*/
+
+.threed{
+width: 23%;
+float: left;
+margin: 1%;
+}
+
+.threed img {
+width: 100%;
+height: auto;
+margin: 10px 10px 20px 0px;
+border: 5px solid black;   
+}
+
+
+/*3D form page END*/
+
+/*Color Theory page START*/
+
+.ct {
+width: 23%;
+float: left;
+margin: 1%;
+}
+
+.ct img {
+width: 100%;
+height: auto;
+margin: 10px 10px 20px 0px;
+border: 5px solid black;   
+}
+
+
+/*Color Theory page END*/
+
+/*Design Drawing page START*/
+
+.dd {
+width: 23%;
+float: left;
+margin: 1%;
+}
+
+.dd img {
+width: 100%;
+height: auto;
+margin: 10px 10px 20px 0px;
+border: 5px solid black;   
+}
+
+/*Design Drawing page END*/
+
+/*Digital Media Design 1 page START*/
+
+.dmdo {
+width: 23%;
+float: left;
+margin: 1%;
+}
+
+.dmdo img {
+width: 100%;
+height: auto;
+margin: 10px 10px 20px 0px;
+border: 5px solid black;   
+}
+
+/*Digital Media Design 1 page END*/
+
+/*Digital Media Design 2 page END*/
+
+.dmdt {
+width: 23%;
+float: left;
+margin: 1%;
+}
+
+.dmdt img {
+width: 100%;
+height: auto;
+margin: 10px 10px 20px 0px;
+border: 5px solid black;   
+}
+
+/*Digital Media Design 2 page END*/
+
+/*Form and Image page START*/
+
+.fait {
+width: 23%;
+float: left;
+margin: 1%;
+}
+
+.fait img {
+width: 100%;
+height: auto;
+margin: 10px 10px 20px 0px;
+border: 5px solid black;   
+}
+
+/*Form and Image page END*/
+
+/*Photography page START*/
+
+.photot {
+width: 23%;
+float: left;
+margin: 1%;
+}
+
+.photot img {
+width: 100%;
+height: auto;
+margin: 10px 10px 20px 0px;
+border: 5px solid black;   
+}
+
+/*Photography page END*/
+
+/*Typography page START*/
+
+.typet {
+width: 23%;
+float: left;
+margin: 1%;
+}
+
+.typet img {
+width: 100%;
+height: auto;
+margin: 10px 10px 20px 0px;
+border: 5px solid black;   
+}
+
+
+/*Typography page END*/
+
+footer {
+font-weight: 400;
+margin: 0px 20px 50px 20px; 
+}
+
+
+.contact-1 {
+border-top: solid black 2px;
+padding-top: 5px;
+}
+
+.contact-2 {
+padding-top: 20px;
+}
+
+.contact-2 a:hover {
+color:deepskyblue;
+text-decoration: none;
+}
+
+.contact-2 a:link {
+text-decoration:none;
+}
+
+
+
+/* ======================================================
+   Media Queries for Responsivness: Desktop First 
+   ====================================================== */
+   
+
+@media (max-width: 900px) {
+.intro {
+width: 80%;
+margin: 20px 0px 20px 20px; 
+}
+
+
+.about {
+font-weight: 400;
+font-size: 16px;
+width: 45%;
+margin: 93px 20px 30px 35%;
+}
+
+.typet {
+width: 40%;
+float: left;
+margin: 1%;
+}     
+
+.photot {
+width: 40%;
+float: left;
+margin: 1%;
+}    
+
+.fait {
+width: 40%;
+float: left;
+margin: 1%;
+}    
+
+.dmdt {
+width: 40%;
+float: left;
+margin: 1%;
+}    
+
+.dmdo {
+width: 40%;
+float: left;
+margin: 1%;
+}    
+
+.dd {
+width: 40%;
+float: left;
+margin: 1%;
+}    
+
+.ct {
+width: 40%;
+float: left;
+margin: 1%;
+}
+    
+.threed{
+width: 40%;
+float: left;
+margin: 1%;
+}
+   
+.exo {
+width: 40%;
+float: left;
+margin: 1%;
+}
+
+
+
+.ext {
+width: 40%;
+float: left;
+margin: 1%;
+}
+
+
+   
+.exth {
+width: 40%;
+float: left;
+margin: 1%;
+}
+
+
+.exf {
+width: 43%;
+float: left;
+margin: 1%;
+}
+
+
+.exfi {
+width: 40%;
+float: left;
+margin: 1%;
+}
+
+
+
+.exs{
+width: 40%;
+float: left;
+margin: 1%;
+}
+
+
+
+.exse{
+width: 40%;
+float: left;
+margin: 1%;
+}
+
+
+
+.exe{
+width: 40%;
+float: left;
+margin: 1%;
+}
+    
+.twodo {
+width: 40%;
+float: left;
+margin: 1%;
+}
+
+
+
+.threedo {
+width: 40%;
+float: left;
+margin: 1%;
+}
+
+
+   
+.cto {
+width: 40%;
+float: left;
+margin: 1%;
+}
+
+
+
+.ddo {
+width: 40%;
+float: left;
+margin: 1%;
+}
+
+
+
+.dmdoo {
+width: 40%;
+float: left;
+margin: 1%;
+}
+
+
+
+.dmdto {
+width: 40%;
+float: left;
+margin: 1%;
+}
+
+
+
+.faio {
+width: 40%;
+float: left;
+margin: 1%;
+}
+
+
+
+.photoo {
+width: 50%;
+float: left;
+margin: 1%;
+}
+
+
+
+.typeo {
+width: 40%;
+float: left;
+margin: 1%;
+}
+
+}
+
+
+
+@media (max-width: 450px) { 
+.about {
+width: 50%;
+}
+  
+}
+
+
+@media (max-width: 360px) { 
+.about {
+width: 50%;
+}
+
+.typet {
+width: 98%;
+float: left;
+margin: 1%;
+}     
+
+.photot {
+width: 98%;
+float: left;
+margin: 1%;
+}    
+
+.fait {
+width: 98%;
+float: left;
+margin: 1%;
+}    
+
+.dmdt {
+width: 98%;
+float: left;
+margin: 1%;
+}    
+
+.dmdo {
+width: 98%;
+float: left;
+margin: 1%;
+}    
+
+.dd {
+width: 98%;
+float: left;
+margin: 1%;
+}    
+
+.ct {
+width: 98%;
+float: left;
+margin: 1%;
+}
+    
+.threed{
+width: 98%;
+float: left;
+margin: 1%;
+}    
+
+.exo {
+width: 98%;
+float: left;
+margin: 1%;
+}
+
+
+
+.ext {
+width: 98%;
+float: left;
+margin: 1%;
+}
+
+
+   
+.exth {
+width: 98%;
+float: left;
+margin: 1%;
+}
+
+
+.exf {
+width: 98%;
+float: left;
+margin: 1%;
+}
+
+
+.exfi {
+width: 98%;
+float: left;
+margin: 1%;
+}
+
+
+
+.exs{
+width: 98%;
+float: left;
+margin: 1%;
+}
+
+
+
+.exse{
+width: 98%;
+float: left;
+margin: 1%;
+}
+
+
+
+.exe{
+width: 98%;
+float: left;
+margin: 1%;
+}
+    
+.twodo {
+width: 98%;
+float: left;
+margin: 1%;
+}
+
+}
