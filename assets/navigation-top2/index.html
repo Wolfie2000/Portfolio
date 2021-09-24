@@ -1,0 +1,56 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Responsive 3-Line Menu</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+
+<div id="container">
+
+<header class="cf">	
+
+<nav>
+<h1 class="title">Title</h1>
+<ul id="nav" class="cf">
+	<li><a href="#">Home</a></li>
+	<li><a href="#">Portfolio</a></li>
+	<li><a href="#">About</a></li>
+</ul>
+</nav>
+
+</header>
+
+
+<div id="main">
+<p>This is a slightly modified version of the menu tutorial available <a href="http://blog.teamtreehouse.com/how-to-build-a-three-line-drop-down-menu-for-a-responsive-website-in-jquery" target="_blank">here</a>.</p>
+<p>It's simple and easy to control / style. Those menus can very quickly get very complex, especially if they have multi-level drop-downs (which you shouldn't really need for the portfolio site). It's mostly CSS with a little bit of jQuery/Java Script for the toggle feature.</p>
+<p>Resize the window to see how it behaves. The current breakpoint is set at 768px (if screen is smaller the mobile menu appears). </p>
+</div>
+
+</div><!-- end of container -->
+
+
+
+<!--The Java Script for the menu (if you want to change the Media Query breakpoint, adjust the number 768 for teh window.innerWidth):-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript">
+	$("#nav").addClass("js").before('<div id="menu"><img src="images/3-lines.png" width="40" height="40" alt=""/></div>');
+	$("#menu").click(function(){
+		$("#nav").slideToggle();
+	});
+	$(window).resize(function(){
+		if(window.innerWidth > 768) {
+			$("#nav").removeAttr("style");
+		}
+	});
+</script>
+
+
+</body>
+</html>
+	

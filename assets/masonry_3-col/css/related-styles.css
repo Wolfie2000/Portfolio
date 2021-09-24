@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Reset and Clearfix:*/
+
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+padding: 0;
+margin: 0;
+font-size: 100%;
+font-weight: normal;
+list-style: none;
+}
+.cf:before, .cf:after { content: ""; display: table; }
+.cf:after { clear: both; }
+.cf { zoom: 1; }
+
+
+#wrapper {
+    width: 90%;
+	max-width: 1200px;
+    margin: 0 auto;
+}
+
+	
+
+/* ---------->>> Responsive Images <<<-----------*/
+
+.thumb {
+	width: 31.333%;
+	margin: 1%;
+	float: left;	
+}
+.thumb img, .project img {
+	width: 100%;
+	height: auto;	
+}
+
+
+
+/* ---------->>> CSS Transitions <<<-----------*/
+
+
+.fade a {
+	opacity: 1.0;
+-webkit-transition: all 0.5s ease-in;
+-moz-transition: all 0.5s ease-in;
+-ms-transition: all 0.5s ease-in;
+-o-transition: all 0.5s ease-in;
+transition: all 0.5s ease-in;
+}
+
+.fade a:hover {
+	opacity: 0.5;
+-webkit-transition: all 0.5s ease-out;
+-moz-transition: all 0.5s ease-out;
+-ms-transition: all 0.5s ease-out;
+-o-transition: all 0.5s ease-out;
+transition: all 0.5s ease-out;
+}
+
+
+
+/* ==========================================================================
+  less than 768px
+   ========================================================================== */
+
+@media (max-width: 768px) {
+	
+.thumb {
+	width: 48%;
+	margin: 1%;
+	float: left;	
+}
+
+}
+
+

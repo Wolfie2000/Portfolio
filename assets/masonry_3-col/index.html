@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">	
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+<title>Masonry Layout</title>
+
+<link rel="stylesheet" type="text/css" href="css/related-styles.css">
+
+<!--links to the jQuery library:-->
+<script src="../../js/jquery-3.4.1.js"></script>
+
+<!--Link to Masonry Scripts (to make the vertical caps in grid dissapear) :-->
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+
+
+
+<div id="portfolio" class="cf">
+<div id="grid" class="cf">
+
+<div class="thumb fade"> 
+<a href="#"><img src="http://dummyimage.com/400x600/000/fff" /></a>
+</div>
+
+<div class="thumb fade">
+<a href="#"><img src="http://dummyimage.com/600x400/000/fff" /></a>
+</div>
+
+<div class="thumb fade">
+<a href="#"><img src="http://dummyimage.com/400x600/000/fff" /></a>
+</div>
+
+<div class="thumb fade">
+<a href="#"><img src="http://dummyimage.com/600x400/000/fff" /></a>
+</div>
+
+<div class="thumb fade">
+<a href="#"><img src="http://dummyimage.com/400x600/000/fff" /></a>
+</div>
+
+<div class="thumb fade">
+<a href="#"><img src="http://dummyimage.com/400x600/000/fff" /></a>
+</div>
+
+<div class="thumb fade">
+<a href="#"><img src="http://dummyimage.com/600x400/000/fff" /></a>
+</div>
+
+<div class="thumb fade">
+<a href="#"><img src="http://dummyimage.com/400x600/000/fff" /></a>
+</div>
+
+<div class="thumb fade">
+<a href="#"><img src="http://dummyimage.com/600x400/000/fff" /></a>
+</div>
+
+<div class="thumb fade">
+<a href="#"><img src="http://dummyimage.com/400x600/000/fff" /></a>
+</div>
+
+<div class="thumb fade">
+<a href="#"><img src="http://dummyimage.com/600x400/000/fff" /></a>
+</div>
+
+<div class="thumb fade">
+<a href="#"><img src="http://dummyimage.com/400x600/000/fff" /></a>
+</div>
+
+<div class="thumb fade">
+<a href="#"><img src="http://dummyimage.com/400x600/000/fff" /></a>
+</div>
+
+<div class="thumb fade">
+<a href="#"><img src="http://dummyimage.com/600x400/000/fff" /></a>
+</div>
+
+</div>
+</div>
+
+
+</div>
+
+
+<!--Nex to linking the the full java script file in the head section you need to "activate" the plugin with this script:-->
+<script>
+var container = document.querySelector('#grid');
+var msnry;
+// initialize Masonry after all images have loaded
+imagesLoaded( container, function() {
+  msnry = new Masonry( container );
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>mouse over with two images</title>
+
+<style type="text/css">
+
+/*page styles:*/
+body {
+	padding: 50px;
+	font-size: 14px;	
+}
+a { color: #FFF; text-decoration: none; }
+.space { height: 50px;}
+.clear { clear: both;}
+
+/*responsive images:*/
+img {
+	width: 100%;
+	height: auto;	
+}
+.grid-box {
+	width: 23%;
+	margin: 1%;
+	float: left;
+	position: relative;
+}
+.imagefade {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+}
+.imagefade span {
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s;
+	-moz-transition:    opacity 0.5s;
+	-o-transition:      opacity 0.5s;
+}
+.imagefade span p {
+	position: absolute;
+	top: 20px; left: 20px;
+	z-index: 2;
+	font-size: 36px; 
+}
+.imagefade:hover span {
+	opacity: 1;
+}
+
+
+.imagefade:hover .brightness img {
+	filter: brightness(25%); 
+}
+.imagefade:hover .bright img {
+	filter: brightness(25%); 
+}
+.imagefade:hover .greyscale img {
+	filter: grayscale(100%); 
+}
+.imagefade:hover .brightness-greyscale img {
+	filter: brightness(50%)
+	grayscale(100%); 
+}
+.imagefade:hover .bright-grey-blur img {
+	filter: brightness(50%)
+	grayscale(100%)
+	blur(5px);
+}
+.imagefade:hover .sepia img {
+	filter: sepia(3);
+}
+.imagefade:hover .hue img {
+	filter: hue-rotate(90deg);
+}
+.imagefade:hover .invert img {
+	filter: invert(.8);
+}
+.imagefade:hover .contrast img {
+	filter: contrast(4);
+}
+
+
+
+ @media (max-width: 768px) { 
+.imagefade span {
+	opacity: 1;
+}
+.imagefade span p {
+	font-size: 16px;
+	top: 10px; left: 10px;
+}
+.bright img {
+	filter: brightness(25%); 
+}
+
+}
+
+
+
+
+.animation {
+	margin: 100px 1%;
+}
+
+img.animated {
+  -webkit-animation: filter-animation 5s infinite;
+}
+
+@-webkit-keyframes filter-animation {
+  0% {
+    -webkit-filter: sepia(0) saturate(2) blur(0px);
+  }
+  
+  50% {
+    -webkit-filter: sepia(2) saturate(22) blur(9px);
+  }
+  
+  100% {
+    -webkit-filter: sepia(0) saturate(2) blur(0px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Hovers with text and CSS filters</h1>
+<br><br>
+
+<div class="grid-box">
+<p>britness</p>
+<a href="#" class="imagefade"><img src="../../plugins/hovers/flowers_color.jpg" alt=""/>
+<span class="bright">
+<img src="../../plugins/hovers/flowers_color.jpg" alt=""/>
+<p>Class Title</p>
+</span>
+</a>
+</div>
+
+<div class="grid-box">
+<p>greyscale</p>
+<a href="#" class="imagefade"><img src="../../plugins/hovers/flowers_color.jpg" alt=""/>
+<span class="greyscale">
+<img src="../../plugins/hovers/flowers_color.jpg" alt=""/>
+<p>Class Title</p>
+</span>
+</a>
+</div>
+
+<div class="grid-box">
+<p>britness + greyscale</p>
+<a href="#" class="imagefade"><img src="../../plugins/hovers/flowers_color.jpg" alt=""/>
+<span class="brightness-greyscale">
+<img src="../../plugins/hovers/flowers_color.jpg" alt=""/>
+<p>Class Title</p>
+</span>
+</a>
+</div>
+
+<div class="grid-box">
+<p>britness + greyscale + blur</p>
+<a href="#" class="imagefade"><img src="../../plugins/hovers/flowers_color.jpg" alt=""/>
+<span class="bright-grey-blur">
+<img src="../../plugins/hovers/flowers_color.jpg" alt=""/>
+<p>Class Title</p>
+</span>
+</a>
+</div>
+
+<div class="grid-box">
+<p>sepia</p>
+<a href="#" class="imagefade"><img src="../../plugins/hovers/flowers_color.jpg" alt=""/>
+<span class="sepia">
+<img src="../../plugins/hovers/flowers_color.jpg" alt=""/>
+<p>Class Title</p>
+</span>
+</a>
+</div>
+
+<div class="grid-box">
+<p>hue-rotate</p>
+<a href="#" class="imagefade"><img src="../../plugins/hovers/flowers_color.jpg" alt=""/>
+<span class="hue">
+<img src="../../plugins/hovers/flowers_color.jpg" alt=""/>
+<p>Class Title</p>
+</span>
+</a>
+</div>
+
+<div class="grid-box">
+<p>hue-rotate</p>
+<a href="#" class="imagefade"><img src="../../plugins/hovers/flowers_color.jpg" alt=""/>
+<span class="invert">
+<img src="../../plugins/hovers/flowers_color.jpg" alt=""/>
+<p>Class Title</p>
+</span>
+</a>
+</div>
+
+<div class="grid-box">
+<p>hue-rotate</p>
+<a href="#" class="imagefade"><img src="../../plugins/hovers/flowers_color.jpg" alt=""/>
+<span class="contrast">
+<img src="../../plugins/hovers/flowers_color.jpg" alt=""/>
+<p>Class Title</p>
+</span>
+</a>
+</div>
+
+
+<div class="space clear"></div>
+
+
+<br><br><br><br>
+<hr>
+
+<div class="animation">
+<img class="animated" src="../../plugins/hovers/flowers_color.jpg" alt=""/>
+</div>
+
+
+
+
+
+</body>
+</html>

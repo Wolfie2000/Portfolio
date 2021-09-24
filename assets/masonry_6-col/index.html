@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name="description" content="description">
+ 
+<title>Masonry</title>
+ 
+<link href="css/related-styles.css" rel="stylesheet" type="text/css">
+
+<!--links to the jQuery library:-->
+<script src="../../js/jquery-3.4.1.js"></script>
+
+<!--Link to Masonry Scripts:-->
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+
+<body>
+ 		
+
+ 
+	    
+<div id="grid" class="js-masonry cf" data-masonry-options='{ "gutter": ".gutter-sizer", "columnWidth": ".grid-sizer", "itemSelector": ".item" }'>
+
+<!--Each image is placed in a div element:-->
+
+<div class="gutter-sizer"></div>
+
+<div class="item width2">
+<a href="#"><img src="http://dummyimage.com/400x600/000/fff" /></a>
+</div>
+  
+<div class="item width3">
+<a href="#"> <img src="http://dummyimage.com/600x400/000/fff" /></a>
+</div>
+
+<div class="item width1">
+<a href="#"><img src="http://dummyimage.com/400x600/000/fff" /></a>
+</div>
+
+<div class="item width2">
+<a href="#"><img src="http://dummyimage.com/600x400/000/fff" /></a>
+</div>
+
+<div class="item width1">
+<a href="#"><img src="http://dummyimage.com/400x600/000/fff" /></a>
+</div>
+
+<div class="item width2">
+<a href="#"> <img src="http://dummyimage.com/600x400/000/fff" /></a>
+</div>
+
+<div class="item width1">
+<a href="#"><img src="http://dummyimage.com/400x600/000/fff" /></a>
+</div>
+
+<div class="item width1">
+<a href="#"><img src="http://dummyimage.com/400x600/000/fff" /></a>
+</div>
+
+<div class="item width2">
+<a href="#"> <img src="http://dummyimage.com/600x400/000/fff" /></a>
+</div>
+
+<div class="item width1">
+<a href="#"><img src="http://dummyimage.com/400x600/000/fff" /></a>
+</div>
+
+<div class="item width2">
+<a href="#"><img src="http://dummyimage.com/600x400/000/fff" /></a>
+</div>
+
+<div class="item width1">
+<a href="#"><img src="http://dummyimage.com/400x600/000/fff" /></a>
+</div>
+
+<div class="item width1">
+<a href="#"><img src="http://dummyimage.com/400x600/000/fff" /></a>
+</div>
+
+
+
+</div><!-- end projects -->
+
+	     
+
+
+<!--The Masonry JavaScript plugin is necessary here. I can explain why during class-->
+<script>
+var container = document.querySelector('#grid');
+var msnry;
+// initialize Masonry after all images have loaded
+imagesLoaded( container, function() {
+  msnry = new Masonry( container );
+});
+</script>
+
+
+
+ 
+</body>
+</html>

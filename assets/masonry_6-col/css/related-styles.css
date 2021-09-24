@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+padding: 0;
+margin: 0;
+font-size: 100%;
+font-weight: normal;
+list-style: none;
+}
+
+.cf:before, .cf:after { content: ""; display: table; }
+.cf:after { clear: both; }
+.cf { zoom: 1; }
+
+
+/* ---------->>> General Rules <<<-----------*/
+
+body {
+	background-color: #666666;	
+	color: #000;
+}
+
+a { color: #999; text-decoration: none; }
+a:hover { color: #CCC; }
+
+img {
+	width: 100%;
+	height: auto;	
+}
+
+
+/* ---------->>> Main Sections <<<-----------*/
+
+#grid {
+	width: 75%;
+	max-width: 900px;
+	margin: 50px auto;
+	padding: 0px 0px;
+}
+
+
+/* ---------->>> Image Grid <<<-----------*/
+
+.grid-sizer {
+  width:  18%;
+}
+.gutter-sizer { width: 1%; }
+
+.item {
+	float: left;
+	line-height: 0px;	
+	position: relative;
+	line-height: 0px;
+	margin: 1%;
+}
+.width1 {
+	width: 18%;		
+}
+.width2 {
+	width: 38%;
+}
+.width3 {
+	width: 58%;
+}
+
+
+
+
+/* ---------->>> Media Queries <<<-----------*/
+
+
+@media screen and (max-width: 768px) {
+.width1, .width2, .width3 {
+	width: 48%;
+	margin: 2% 1% 2% 1%;
+}
+}
+
+@media screen and (max-width: 400px) {
+.width1, .width2, .width3 {
+	width: 100%;
+	margin: 2% 0% 2% 0%;
+}
+}

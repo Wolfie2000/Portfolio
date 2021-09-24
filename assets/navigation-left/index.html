@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name="description" content="description">
+
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+ 
+<title>Fun With Scrolling</title>
+ 
+<link href="../../css/styles.css" rel="stylesheet" type="text/css">
+<link href="css/related-styles.css" rel="stylesheet" type="text/css">
+
+<!--links to the jQuery library:-->
+<script src="../../js/jquery-3.4.1.js"></script>
+ 
+</head>
+ 
+<body>
+ 	
+<div id="container">
+ 
+
+<nav>
+    <ul id="nav">
+      <li><a href="#section1">Section 1</a></li>
+      <li><a href="#section2">Section 2</a></li>
+      <li><a href="#section3">Section 3</a></li>
+      <li><a href="#section4">Section 4</a></li>
+      <li><a href="#section5">Section 5</a></li>
+    </ul>
+</nav>
+		
+ 		
+<div id="section1">
+<h1>Description:</h1>
+<p>Fixed navigation on the left becomes a fixed pull-down menu located at the top on smaller screens. </p>
+</div>
+	    
+<div id="section2">
+<h1>Section Two</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet. Curabitur aliquet orci sit amet est posuere consectetur. Fusce nec leo ut massa viverra venenatis. Nam accumsan libero a elit aliquet quis ullamcorper arcu tincidunt. Praesent purus turpis, consectetur quis congue vel, pulvinar at lorem. Vivamus varius condimentum dolor, quis ultricies ipsum porta quis. </p>
+</div>
+	    
+<div id="section3">
+<h1>Section Three</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet. Curabitur aliquet orci sit amet est posuere consectetur. Fusce nec leo ut massa viverra venenatis. Nam accumsan libero a elit aliquet quis ullamcorper arcu tincidunt. Praesent purus turpis, consectetur quis congue vel, pulvinar at lorem. Vivamus varius condimentum dolor, quis ultricies ipsum porta quis. </p>
+</div>
+	    
+<div id="section4">
+<h1>Section Four</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet. Curabitur aliquet orci sit amet est posuere consectetur. Fusce nec leo ut massa viverra venenatis. Nam accumsan libero a elit aliquet quis ullamcorper arcu tincidunt. Praesent purus turpis, consectetur quis congue vel, pulvinar at lorem. Vivamus varius condimentum dolor, quis ultricies ipsum porta quis. </p>
+</div>
+        
+<div id="section5">
+<h1>Section Five</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet. Curabitur aliquet orci sit amet est posuere consectetur. Fusce nec leo ut massa viverra venenatis. Nam accumsan libero a elit aliquet quis ullamcorper arcu tincidunt. Praesent purus turpis, consectetur quis congue vel, pulvinar at lorem. Vivamus varius condimentum dolor, quis ultricies ipsum porta quis. </p>
+</div>
+
+<div id="back"><a href="#container">back to top</a></div>
+	     
+</div><!-- end of container -->
+
+
+
+<script type="text/javascript">
+	$("#nav").addClass("js").before('<div id="menu"><img src="images/3-lines.png" width="40" height="40" alt=""/></div>');
+	$("#menu").click(function(){
+		$("#nav").slideToggle();
+	});
+	$(window).resize(function(){
+		if(window.innerWidth > 768) {
+			$("#nav").removeAttr("style");
+		}
+	});
+</script>
+
+
+<script src="js/scroll.js"></script>
+
+ 
+</body>
+</html>

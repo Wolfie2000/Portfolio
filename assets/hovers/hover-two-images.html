@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>mouse over with two images</title>
+
+<style type="text/css">
+
+img {
+	width: 100%;
+	height: auto;	
+}
+.imagefade {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+}
+.imagefade span {
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s;
+	-moz-transition:    opacity 0.5s;
+	-o-transition:      opacity 0.5s;
+}
+.imagefade span p {
+	position: absolute;
+	top: 20px; left: 20px;
+	z-index: 2;
+}
+.imagefade:hover span {
+	opacity: 1;
+}
+.imagefade:hover span img {
+	opacity: 1;
+	filter: grayscale(100%)
+	brightness(50%); 
+}
+
+/*optional styles:*/
+body {
+	padding: 50px;	
+}
+a { color: #FFF; text-decoration: none; font-size: 36px; }
+.test { width: 100%; }
+
+</style>
+
+</head>
+
+<body>
+
+<p> The CSS is in the head section of this HTML page. In this case 2 separate images need to be saved and placed.</p>
+
+<div class="test">
+<a href="#" class="imagefade"><img src="../../plugins/hovers/flowers_color.jpg" alt=""/>
+<span>
+<img src="../../plugins/hovers/flowers_color.jpg" alt=""/>
+<p>optional text</p>
+</span>
+</a>
+</div>
+
+
+</body>
+</html>

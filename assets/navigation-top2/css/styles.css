@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*CSS Reset:*/
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+padding: 0;
+margin: 0;
+font-size: 100%;
+font-weight: normal;
+}
+
+/*Clearfix:*/
+.cf:before, .cf:after { content: ""; display: table; }
+.cf:after { clear: both; }
+.cf { zoom: 1; }
+.clear { clear: both;	}
+
+
+/* ---------->>> General Rules (Don't Copy) <<<-----------*/
+
+body {
+	background-color: #FFFFFF;	
+	color: #999999;
+}
+#container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0px auto 0px auto;	
+}
+#main {
+	margin: 50px 0px;	
+}
+p {
+	margin-bottom: 15px;	
+}
+
+
+header {
+	
+}
+.title {
+	text-transform: uppercase;
+	float: left;
+	color: #666666;
+	margin-top: 5px;
+}
+
+/* ---------->>> Menu Rules (desktop) <<<-----------*/
+
+nav {
+	margin-top: 20px;	
+}
+nav a {
+	color: #666666;
+	outline: none;	
+	border: 0px
+}
+nav a:hover {
+	color: #000000;	
+}
+
+nav ul {
+	width:75%;
+	list-style: none;
+	float: right;
+	text-align: right;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0px 0px 0px 10px;
+}
+
+nav li a {
+	display: block;
+	font-size: 1em;
+	text-decoration: none;
+}
+	
+	
+/* ---------->>> Menu Rules (tablet + mobile) <<<-----------*/
+
+@media screen and (max-width: 768px) {
+	
+nav {
+	margin-top: 0px;	
+}
+.title {
+	margin-top: 19px;
+}
+
+#menu {
+	width:100%;
+	display: block;
+	text-align: right;
+	/*aligning the above "left" will make the 3 lines appear on the left*/
+	padding: 5px 0px;
+	margin: 0px;
+}
+/*position of 3-lines image:*/
+#menu img {
+	margin: 0px 20px;	
+}
+#nav.js {
+	display: none;
+}
+nav ul {
+	width:100%;
+	text-align: left;
+	margin-top: 20px;
+}
+nav li {
+	width:100%;
+	margin: 1px 0px 20px 0px;
+}
+}
+
+@media screen and (min-width: 768px) {
+#menu {
+	display: none;
+}
+}
+
+

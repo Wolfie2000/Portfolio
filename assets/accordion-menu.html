@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/styles.css">
+<style>
+body {
+	 background-color: hsla(0,0%,0%,0.10);
+}
+.layout {
+	margin: 50px auto;
+	width: 25%;
+
+}
+.accordion {
+ background: none;
+  color: #999;
+  cursor: pointer;
+  padding: 10px 0px;
+  width: 100%;
+  border: none;
+  border-top: 1px solid black;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.last {
+  border-bottom: 1px solid black;
+}
+
+.active, .accordion:hover {
+ color: black;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #999;
+  font-weight: bold;
+  float: right;
+}
+
+.active:after {
+  content: "\2212";
+}
+ul {
+  max-height: 0;
+  overflow: hidden;
+  margin-bottom: 3px;
+  transition: max-height 0.2s ease-out;
+}
+
+li {
+	padding: 3px 0px 3px 0px;
+}
+li a {
+	text-decoration: none;
+	color: hsla(0,0%,0%,0.70);
+}
+li a:hover {
+	text-decoration: none;
+	color: hsla(0,0%,100%,0.99);
+}
+a:focus,
+a:active {
+	outline: none;
+}
+
+</style>
+</head>
+<body>
+
+<div class="layout">
+
+<h2>Accordion with symbols</h2>
+<p>In this example we have added a "plus" sign to each button. When the user clicks on the button, the "plus" sign is replaced with a "minus" sign.</p><br><br>
+
+<button class="accordion">menu 1</button>
+<ul>
+<br>
+<li><a href="../plugins/link-to-page.html">submenu one</a></li>
+<li><a href="../plugins/link-to-page.html">submenu two</a></li>
+<li><a href="../plugins/link-to-page.html">submenu three</a></li>
+<br>
+</ul>
+
+<button class="accordion">menu 2</button>
+<ul>
+<br>
+<li><a href="../plugins/link-to-page.html">submenu one</a></li>
+<li><a href="../plugins/link-to-page.html">submenu two</a></li>
+<li><a href="../plugins/link-to-page.html">submenu three</a></li>
+<li><a href="../plugins/link-to-page.html">submenu four</a></li>
+<li><a href="../plugins/link-to-page.html">submenu five</a></li>
+<br>
+</ul>
+
+<button class="accordion">menu 3</button>
+<ul class="last">
+<br>
+<li><a href="../plugins/link-to-page.html">submenu one</a></li>
+<li><a href="../plugins/link-to-page.html">submenu two</a></li>
+<br>
+</ul>
+
+</div>
+
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
+
+
